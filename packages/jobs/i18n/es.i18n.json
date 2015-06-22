@@ -1,0 +1,34 @@
+{
+  "home":"Menú Principal",
+  "jobs":"Jobs",
+  "update_success":"Jobs actualizado con éxito",
+  "search_hint":"Criterio de búsqueda",
+  "no_data_found":"No hay datos",
+  "load_more":"Traer mas regístros",
+
+  "confirm_remove":"¿ Esta seguro que desea eliminar el regístro ?",
+  "confirm_remove_plural":"¿ Esta seguro que desea eliminar los __count__ regístros ?",
+
+  "no_selection":"Escoge al menos un registro para borrar",
+   
+  "index":"Lista de los jobs",
+  "insert_jobs":"Insertar Jobs",
+  "update_jobs":"Actualizar el Jobs",
+  "view":"Revisar",
+  "submit":"Introducir",
+  "view_jobs":"Revisar Jobs",
+  "back":"Volver atrás",
+  "update":"Actualizar",
+  "remove":"Eliminar",
+  "remove_selection":"Eliminar Los Jobs Seleccionados",
+  "remove_success":"El jobs fue elíminado exitósamente",
+  "actions":"Herramientas",
+  "insert":"Insertar",
+  "insert_success":"El jobs fue creado exitósamente",
+  "title":"Título",
+  "created_at":"Creado",
+  "created_by":"Creado por",
+  "updated_at":"Actualizado",
+  "updated_by":"Actualizado por"
+}
+

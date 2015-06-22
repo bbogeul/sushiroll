@@ -1,0 +1,30 @@
+<head>
+    <title>Welcome to SushiRoll2u</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='http://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
+
+</head>
+
+<template name="basic"> 
+    {{> meteorisFlash}}
+    <div class="meteoris-content">
+      
+        {{> templateBasicHeader}}
+        {{> status}}
+        {{#momentum plugin='slide-height'}}
+        {{>yield}}
+        {{/momentum}}
+    </div>
+  
+    {{> templateBasicFooter}}
+</template>
+
+
+
+
+
+
+
+

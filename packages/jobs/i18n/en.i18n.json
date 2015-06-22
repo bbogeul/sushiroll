@@ -1,0 +1,34 @@
+{
+  "home":"Home",
+  "jobs":"Jobs",
+  "update_success":"Jobs updated successfully",
+  "search_hint":"Search key",
+  "no_data_found":"No Data Found",
+  "load_more":"Load More",
+
+  "confirm_remove":"Are you sure you want to delete this record?",
+  "confirm_remove_plural":"Are you sure you want to delete these __count__ records?",
+
+  "no_selection":"Select at least one row for deletion",
+    
+  "index":"Jobs Index",
+  "insert_jobs":"Insert Jobs",
+  "update_jobs":"Update Jobs",
+  "view":"View",
+  "submit":"Submit",
+  "view_jobs":"View Jobs",
+  "back":"Back",
+  "update":"Update",
+  "remove":"Delete",
+  "remove_selection":"Remove selected jobs",
+  "remove_success":"Jobs removed successfully",
+  "actions":"Actions",
+  "insert":"Insert",
+  "insert_success":"Jobs added successfully",
+  "title":"title",
+  "created_at":"Created At",
+  "created_by":"Created By",
+  "updated_at":"Dpdated At",
+  "updated_by":"Updated By"
+}
+

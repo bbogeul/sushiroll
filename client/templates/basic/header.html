@@ -1,0 +1,51 @@
+<template name="templateBasicHeader">
+  <div id='topMenu' class="navbar-fixed scrollspy">
+  <nav class='white wow fadeInDown'>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a class="brand-logo center hide-on-med-and-down" href="/"><img src='/images/ssiconred.png' height='60' style='margin-top:-15px'></a>
+
+        <ul class="right">
+            <li class='acme hide-on-med-and-down'><a href='{{pathFor 'fullMenu'}}' class='red-text'>Order Now: 805-XXX-XXXX</a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="user-dropdown"><i class="mdi-navigation-more-vert red-text"></i></a></li>
+
+        </ul>
+
+
+        <ul id="user-dropdown" class="dropdown-content">
+
+          {{#if currentUser}}
+            <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{currentUser.profile.name}} <span class="caret"></span></a></li>
+          <li><a href="{{pathFor 'usersProfile'}}">{{_ "Profile"}}</a></li>
+                            <li><a target="_blank" href="https://github.com/warehouseman/meteoris/wiki/User-Manual">{{_ "Help"}}</a></li>
+                            <li class="divider"></li>
+                            <li id="btnLogout"><a href="#">{{_ "Logout"}}</a></li>
+
+          {{else}}
+            <li> <a href="{{pathFor 'usersLogin'}}">{{_ "Login"}}</a></li>
+          {{/if}}
+        </ul>
+
+        <a class="button-collapse show-on-large" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu red-text"></i></a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <ul id="nav-mobile" class="side-nav  red darken-2">
+    <div class='center'>
+      <p class='acme white-text second'>SUSHIROLL2U</p>
+      <p class='white-text' style='margin-top:-1em'>805-XXX-XXXX</p>
+    </div>
+    <li><a class='white-text' href="{{ pathFor 'home' }}" title="Home"><i class="mdi-action-home"></i> Home</a></li>
+    <li><a class='white-text' href="{{ pathFor 'fullMenu' }}" title="Full Menu"><i class="mdi-maps-restaurant-menu"></i> Full Menu</a></li>
+      <li><a class='white-text' href="{{ pathFor 'home' }}" title="About"><i class="mdi-action-info-outline"></i> About US</a></li>
+         <li><a class='white-text' href="{{ pathFor 'map' }}" title="Location"><i class="mdi-maps-place"></i> Location/Contact</a></li>
+           <li><a class='white-text' href="/mugen" title="test"><i class="mdi-hardware-gamepad"></i> test</a></li>
+  </ul>
+
+</template>
+
+
+
+

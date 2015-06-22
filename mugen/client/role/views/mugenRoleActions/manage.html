@@ -1,0 +1,85 @@
+<template name="mugenRoleActionsManage">
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">{{_ "Home"}}</a></li>
+            <li><a href="{{pathFor 'mugenRoleActionsManage'}}">{{_ "mugen"}} : {{_ "role_action" count=2}}</a></li>
+            <li class="active">{{_ "manage"}}</li>
+        </ol>
+
+        <div class="title">
+            <h3 class="pull-left">{{_ "mugen"}} : {{_ "role_action" count=2}}</h3>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="toolbar">
+            <div class="pull-left">
+                <div class="input-group">                    
+                    <select class="form-control" id="mugenRoleGroupId">
+                        <option value="">-- {{_ "choose_group"}} --</option>
+                        <option value="*">*</option>
+                        {{#each mugenRoleGroups}}
+                        <option value="{{_id}}">{{name}}</option>
+                        {{/each}}
+                    </select>
+                    <select class="form-control" id="mugenRoleCollectionId">
+                        <option value="">-- {{_ "choose_collection"}} --</option>
+                        {{#each mugenRoleCollections}}
+                        <option value="{{_id}}">{{name}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="submit" value={{_ "search"}} id="btnSearchManage"/>
+                </div>
+            </div>   
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="input-group">
+            <input type="hidden" id="search">
+            <input type="text" id="name" class="form-control" placeholder={{_ "add_privilege"}}>
+        </div>
+        <div class="input-group">
+            <input type="submit" value={{_ "Submit"}} id="btnInsertManage"/>
+        </div>
+        <div class="clearfix"></div>
+        <br />
+
+        {{#if isEmpty}}
+        <p>{{_ "No Data Found"}}</p>
+
+        {{else}}
+        <div class=" table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width: 30px;"><input type="checkbox" id="checkAll"/></th>                                           
+                        <th id="btnSortname" class="{{meteorisGridViewSortClass 'name'}}">{{_ "Name"}}</th>
+                        <th style="width: 145px;">{{_ "Actions"}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each models}}
+                    <tr>
+                        <td><input type="checkbox" class="checkAll" value="{{_id}}"/></td>                                 
+                        <td>{{name}}</td>               
+                        <td>
+                            <!--                            <a href="{{pathFor 'mugenRoleActionsView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
+                                                        <a href="{{pathFor 'mugenRoleActionsUpdate'}}" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>-->
+                            <a id="btnRemove" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{#if hasMore}}
+        <a class="btn btn-default load-more btn-block" href="{{hasMore}}">{{_ "Load More"}} ...</a>
+        {{/if}}
+        {{#unless ready}}
+        {{> spinner}}
+        {{/unless}}
+        {{/if}}
+    </div>
+</template>

@@ -1,0 +1,34 @@
+{
+  "home":"Menu Principal",
+  "jobs":"Jobs",
+  "update_success":"Jobs mis a jour avec succés",
+  "search_hint":"Critères de recherche",
+  "no_data_found":"Aucun résultat de recherche",
+  "load_more":"Chargez plus de fiches",
+
+  "confirm_remove":"Êtes- vous sûr de vouloir supprimer cet élément ?",
+  "confirm_remove_plural":"Êtes-vous sûr de vouloir supprimer ces __count__ éléments ?",
+
+  "no_selection":"Sélectionnez au moins une ligne pour cette action",
+   
+  "index":"Index de jobs",
+  "insert_jobs":"Insérée Jobs",
+  "update_jobs":"Actualizar el Jobs",
+  "view":"Reviser",
+  "submit":"Soumettre",
+  "view_jobs":"Reviser Jobs",
+  "back":"Retourner",
+  "update":"Mettre a jours",
+  "remove":"Eliminer",
+  "remove_selection":"Eliminer les Jobs Choisí",
+  "remove_success":"Le jobs était eliminer avec succès",
+  "actions":"Outils",
+  "insert":"Insérée",
+  "insert_success":"Le jobs était insérée avec succès",
+  "title":"Titre",
+  "created_at":"Créé",
+  "created_by":"Créé par",
+  "updated_at":"Mis a jours",
+  "updated_by":"Mis a jours par"
+}
+
