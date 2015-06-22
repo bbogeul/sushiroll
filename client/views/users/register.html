@@ -6,21 +6,26 @@
                 <img src='/images/logo.png' class='responsive-img' alt='sushiroll2u'>
                 </div>
                 <form role="form">
-                    <div class="form-group">
-                        <label class="sr-only" for="email">{{_ "Email"}}</label>
-                        <input type="text" class="form-control input-lg" id="email" placeholder="Email">
+                    <div class="input-field">
+                          <i class="mdi-action-account-circle prefix"></i>
+                        <input type="text" id="email" class="validate">
+                         <label for="email">{{_ "Email"}}</label>
                     </div>                        
-                    <div class="form-group">
-                        <label class="sr-only" for="password">{{_ "Password"}}</label>
-                        <input type="password" class="form-control input-lg" id="password" placeholder="Password">
+                    <div class="input-field">
+                      <i class="mdi-hardware-security prefix"></i>
+                   
+                        <input type="password" id="password"  class="validate">
+                             <label for="password">{{_ "Password"}}</label>
                     </div>
                
-                    <div class="form-group">
-                        <label class="sr-only" for="name">{{_ "Name"}}</label>
-                        <input type="text" class="form-control input-lg" id="name" placeholder="Name">
+                    <div class="input-field">
+                      <i class="mdi-social-mood prefix"></i>
+                      
+                        <input type="text"  id="name"  class="validate">
+                          <label for="name">{{_ "Name"}}</label>
                     </div>
-                    <div class="form-group">
-                        <input id="btnRegister" class="btn btn-danger btn-red btn-block btn-lg" type="submit" value="Register"/>
+                    <div class="center" style="padding:1em">
+                        <input id="btnRegister" class="btn-large orange darken-1" type="submit" value="Register"/>
                     </div>
                 </form>
                 <p class="text-center"><a href="{{pathFor 'usersLogin'}}">{{_ "Already have account? Log In here"}}</a></p>
