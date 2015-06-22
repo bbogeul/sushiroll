@@ -28,6 +28,11 @@ type:Date,
 label: 'Date Added',
 optional: true,
 },
+imageId: {
+        type: String,
+        label: "Image",
+        optional: true,
+    },
 
             /* AUTOVALUE */
             appId: {
@@ -101,6 +106,9 @@ Nigiri.allow({
 
 /* register helper for default relations */
 Nigiri.helpers({
+      image: function() {
+        return Images.findOne(this.imageId);
+    },
     
     createdUser: function() {
         return Meteor.users.findOne(this.createdUserId);
