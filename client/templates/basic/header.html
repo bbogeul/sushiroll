@@ -15,9 +15,9 @@
         <ul id="user-dropdown" class="dropdown-content">
 
           {{#if currentUser}}
-            <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{currentUser.profile.name}} <span class="caret"></span></a></li>
+            <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{currentUser.profile.name}} <i class='mdi-social-mood right'></i></a></li>
           <li><a href="{{pathFor 'usersProfile'}}">{{_ "Profile"}}</a></li>
-                            <li><a target="_blank" href="https://github.com/warehouseman/meteoris/wiki/User-Manual">{{_ "Help"}}</a></li>
+                            <li><a target="_blank" href="">{{_ "Help"}}</a></li>
                             <li class="divider"></li>
                             <li id="btnLogout"><a href="#">{{_ "Logout"}}</a></li>
 
